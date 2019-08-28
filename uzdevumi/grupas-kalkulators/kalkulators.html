@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="lv-LV">
+
+<head>
+    <title>Start(it)</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen" title="no title" charset="utf-8">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <meta charset="utf8">
+</head>
+
+<body>
+    <script type="text/javascript" src="js/atnemsana.js"></script>
+    <script type="text/javascript" src="js/dalisana.js"></script>
+    <script type="text/javascript" src="js/kapinasana.js"></script>
+    <script type="text/javascript" src="js/reizinasana.js"></script>
+    <script type="text/javascript" src="js/saskaitisana.js"></script>
+
+    <div class="container">
+        <h1 class="text-center">Kalkulators</h1>
+        <div class="row">
+            <div class="col-sm-3"></div>
+            <div class="col-sm-6 large">
+                <h3 class="text-center">Ievadiet divus skaitļus un nospiediet darbības pogu!</h3>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-2">
+                <input class="form-control" type="text" id="pirmais" value="3" />
+            </div>
+            <div class="col-sm-2">
+                <input class="form-control" type="text" id="otrais" value="2" />
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4 mx-auto">
+                <button class="btn btn-success" onClick="saskaitit()">
+                    <span class="fa fa-2x fa-plus" aria-hidden="true"></span>
+                </button>
+                <button class="btn btn-success" onClick="atnemt()">
+                    <span class="fa fa-2x fa-minus" aria-hidden="true"></span>
+                </button>
+                <button class="btn btn-success" onClick="reizinat()">
+                    <span class="fa fa-2x fa-times" aria-hidden="true"></span>
+                </button>
+                <button class="btn btn-success" onClick="dalit()">
+                    <span class="fa fa-2x fa-rotate-90 fa-minus" aria-hidden="true"></span>
+                </button>
+                <button class="btn btn-success" onClick="videjais()">
+                    <span class="fa fa-2x fa-superscript" aria-hidden="true"></span>
+                </button>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-sm-5"></div>
+            <div class="col-sm-2 text-center">
+                <h2 id="rezultats" class="text-center">???</h2>
+            </div>
+            <div class="col-sm-5"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
